@@ -1,0 +1,21 @@
+$RedColor : red;
+
+@mixin inlineBlock($align:top){
+  display: inline-block;
+  vertical-align: $align;
+}
+h1{
+  @include inlineBlock(bottom);
+}
+
+.text {
+  font-size: 30px;
+
+  &.red{
+    color: $RedColor;
+  }
+
+  a{
+    font-size: 10px;
+  }
+}
